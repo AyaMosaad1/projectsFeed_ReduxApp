@@ -1,5 +1,5 @@
 const initState = {
-    count : 0
+    count : 11
 }
 
 
