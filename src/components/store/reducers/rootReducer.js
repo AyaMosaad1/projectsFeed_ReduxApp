@@ -6,6 +6,7 @@ import projectReducer from './projectReducer';
 //combine all reducers together
 import { combineReducers } from 'redux'
 
+//auth and project is reducer name that we will use in whole app
 const rootReducer = combineReducers({
     auth: authReducer,
     project: projectReducer,
