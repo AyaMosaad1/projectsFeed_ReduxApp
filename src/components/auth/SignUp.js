@@ -6,8 +6,10 @@ class SignUp extends Component {
     password: '',
     firstName: '',
     lastName: '',
+    handleElement:'',
   }
   handleChange = (e) => {
+    //when the id is email , itwill handle the state of email by his function so we need to give this function to every element
     this.setState({
       [e.target.id]: e.target.value
     })
@@ -19,8 +21,14 @@ class SignUp extends Component {
   render() {
     return (
       <div className="container">
-        <form className="white" onSubmit={this.handleSubmit}>
+        <form className="white"
+        onSubmit={this.handleSubmit}
+        >
           <h5 className="grey-text text-darken-3">Sign Up</h5>
+          <div className="input-field">
+            <label htmlFor="handleElement">handleElement</label>
+            <input type="text" id='handleElement' onChange={this.handleChange} />
+          </div>
           <div className="input-field">
             <label htmlFor="email">Email</label>
             <input type="email" id='email' onChange={this.handleChange} />

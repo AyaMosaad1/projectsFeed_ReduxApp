@@ -5,6 +5,7 @@ class CreateProject extends Component {
     title: '',
     content: ''
   }
+  //it handle every state by title and the id of element is title
   handleChange = (e) => {
     this.setState({
       [e.target.id]: e.target.value
