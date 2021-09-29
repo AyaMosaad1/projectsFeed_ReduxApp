@@ -8,7 +8,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### ``
 
 ## install react router dom in application
-### ``
+### `npm i react-router-dom`
 
 ## install redux in application
 ### `npm install --save redux  react-redux`
