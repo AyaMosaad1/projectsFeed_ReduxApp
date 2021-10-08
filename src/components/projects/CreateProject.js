@@ -15,6 +15,7 @@ class CreateProject extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
     // console.log(this.state);
+    //here it can handle the case from action because at form it is return object that has data 
     this.props.createProject(this.state);
     this.props.history.push('/');
   }
