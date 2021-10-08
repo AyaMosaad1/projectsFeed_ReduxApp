@@ -10,10 +10,10 @@ class Dashboard extends Component {
   render() {
 
     // console.log(this.props);
-    const { projects , auth } = this.props;
-    {
-      if (!auth.uid) return <Redirect to="/signIn"/>
-    }
+    const { projects , auth } = this.props
+    //to handle the routing 
+    if (!auth.uid) return <Redirect to="/signIn"/>
+
     return (
       <div className="dashboard container">
         <div className="row">

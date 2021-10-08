@@ -21,10 +21,8 @@ class CreateProject extends Component {
     this.props.history.push('/');
   }
   render() {
-    const { projects , auth } = this.props;
-    {
-      if (!auth.uid) return <Redirect to="/signIn"/>
-    }
+    const { auth } = this.props;
+    if (!auth.uid) return <Redirect to="/signIn"/>
     return (
       <div className="container">
         <form className="white" onSubmit={this.handleSubmit}>
