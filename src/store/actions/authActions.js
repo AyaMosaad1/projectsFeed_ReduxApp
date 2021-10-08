@@ -22,3 +22,14 @@ export const signIn = (Credentials) => {
         })
     }
 }
+
+
+//this will effect to reducer so it is action type
+export const signOut = () => {
+    return (dispatch , getState, {getFirebase}) => {
+        const firebase = getFirebase();
+        firebase.auth().signOut().then(() =>{
+            dispatch({ type: 'SIGNOUT_SUCCESS' })
+        })
+    }
+}

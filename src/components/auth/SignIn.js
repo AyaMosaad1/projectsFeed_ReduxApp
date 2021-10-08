@@ -50,11 +50,11 @@ const mapStateToProps = (state) =>{
   }
 }
 
-const mapDispatchToProp = (dispatch) => {
+const mapDispatchToProps = (dispatch) => {
   return {
     signIn: (creds) => dispatch(signIn(creds))
   }
 
 }
 
-export default connect(mapStateToProps, mapDispatchToProp)(SignIn)
+export default connect(mapStateToProps, mapDispatchToProps)(SignIn)
