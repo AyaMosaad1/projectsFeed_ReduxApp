@@ -7,6 +7,7 @@ The app supports some functionalities, such as:
 * registration system "user can create acount then sign in with it"
 * Creating profile and see it
 * add new project and see project details
+* delete his/her own project
 * scroll newsFeed of projects
 * see Notifications of app
 * add new authors and view them
