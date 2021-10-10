@@ -9,7 +9,6 @@ const Navbar = (props) => {
   // from profile , we can consoleLog the object and see what we need from it
   const links = auth.uid ? <SignedInLinks profile={profile} /> : <SignedOutLinks />;
   // const loading = auth.isLoaded ?  null : <p> loading </p> ;
-  console.log(auth)
   return (
     <nav className="nav-wrapper grey darken-3">
       <div className="container">
@@ -25,7 +24,7 @@ const Navbar = (props) => {
 
 // about this as this empty is true , it is mean I am signOut
 // and in auth , I have "isloaded" also
-const mapStateToProps = (state) =>{
+const mapStateToProps = (state) => {
   return{
    auth: state.firebase.auth,
    profile: state.firebase.profile
