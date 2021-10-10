@@ -7,6 +7,7 @@ import SignIn from './components/auth/SignIn'
 import SignUp from './components/auth/SignUp'
 import CreateProject from './components/projects/CreateProject'
 import newsFeed from './components/post/newsFeed';
+import addAuthor from './components/author/addAuthor';
 
 class App extends Component {
   render() {
@@ -15,12 +16,15 @@ class App extends Component {
         <div className="App">
           <Navbar />
           <Switch>
+            
             <Route exact path='/'component={Dashboard} />
             <Route path='/project/:id' component={ProjectDetails} />
             <Route path='/signin' component={SignIn} />
             <Route path='/signup' component={SignUp} />
             <Route path='/create' component={CreateProject} />
             <Route path='/newsFeed' component={newsFeed} />
+            <Route path="/Authors" component={addAuthor} />
+
           </Switch>
         </div>
       </BrowserRouter>

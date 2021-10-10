@@ -19,4 +19,4 @@ const Notifications = (props) => {
 
 export default Notifications
 
-// 33 , 34  , 36 , 37 , 38 , 39 , 40 , create author as create project , view pagination posts fron jsonServer 
+// 33 , 34  , 36 , 37 , 38 , 39 , 40 , create author as create project 

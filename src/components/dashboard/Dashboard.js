@@ -11,7 +11,8 @@ class Dashboard extends Component {
 
     // console.log(this.props);
     const { projects , auth } = this.props
-    //to handle the routing 
+    console.log( projects );
+    //to handle the routing
     if (!auth.uid) return <Redirect to="/signIn"/>
 
     return (

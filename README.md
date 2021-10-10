@@ -6,9 +6,10 @@ The project is a news Feed of projects that show all the project in newsfeed , w
 The app supports some functionalities, such as:
 * registration system "user can create acount then sign in with it"
 * Creating profile and see it
-* can add new project and see project details
-* can scroll newsFeed of projects 
+* add new project and see project details
+* scroll newsFeed of projects
 * see Notifications of app
+* add new authors and view them
 
 ## Project Dependencies
 React, Redux , thunk & Firebase
