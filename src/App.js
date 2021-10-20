@@ -8,6 +8,7 @@ import SignUp from './components/auth/SignUp'
 import CreateProject from './components/projects/CreateProject'
 import newsFeed from './components/post/newsFeed';
 import addAuthor from './components/author/addAuthor';
+import ClassComponent from './components/post/setUpClassComp';
 
 class App extends Component {
   render() {
@@ -16,7 +17,7 @@ class App extends Component {
         <div className="App">
           <Navbar />
           <Switch>
-            
+
             <Route exact path='/'component={Dashboard} />
             <Route path='/project/:id' component={ProjectDetails} />
             <Route path='/signin' component={SignIn} />
@@ -24,6 +25,7 @@ class App extends Component {
             <Route path='/create' component={CreateProject} />
             <Route path='/newsFeed' component={newsFeed} />
             <Route path="/Authors" component={addAuthor} />
+            <Route path="/test" component={ClassComponent} />
 
           </Switch>
         </div>

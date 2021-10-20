@@ -11,6 +11,8 @@ The app supports some functionalities, such as:
 * scroll newsFeed of projects
 * see Notifications of app
 * add new authors and view them
+* search for project by project's title
+
 
 ## Project Dependencies
 React, Redux , thunk & Firebase

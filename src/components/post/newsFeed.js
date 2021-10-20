@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import Pagination from './pagination';
-import PostSummary from './postSummary'
+import PostSummary from './postSummary';
+import SearchPost from './searchPost';
+
 class newsFeed extends Component {
   constructor(props){
     super(props);
@@ -37,10 +39,13 @@ fetch('https://jsonplaceholder.typicode.com/posts')
     return (
       <div className="dashboard container">
         <div className="row">
+        <SearchPost data = { this.state.posts }/>
+
           <div className="col s-12 mr6 text-center lead">
         { this.state.posts.length ? currentPosts.map(post => <PostSummary key={post.id} post = {post}/>):
           null
         }
+
 
     <Pagination
      postsPerPage = {NumPostsperPage}
